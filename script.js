@@ -1,3 +1,33 @@
+// JavaScript for smooth scrolling and hover effects
+
+// Initialize EmailJS
+(function() {
+    emailjs.init("xATAgyOVojGwazKYY"); // Replace 'your_user_id' with your EmailJS User ID
+})();
+
+// Handle form submission for the contact form
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const data = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        message: formData.get("message"),
+    };
+
+    emailjs.send("service_rjgokp7", "template_9fwns5e", data) // Replace placeholders with actual IDs
+        .then(
+            function(response) {
+                document.getElementById("success-message").classList.remove("hidden");
+                document.getElementById("contact-form").reset();
+            },
+            function(error) {
+                alert("Failed to send the message. Please try again.");
+            }
+        );
+});
+
 // Smooth scrolling for navigation links
 const navLinks = document.querySelectorAll('nav a');
 
@@ -11,39 +41,45 @@ navLinks.forEach(link => {
     });
 });
 
-// Hover effect for internships, projects, and responsibilities
+// Handle "Know More" button and popup functionality
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
-    card.addEventListener('mouseenter', function() {
-        const description = this.querySelector('.description');
-        description.style.opacity = 1;
-        description.style.maxHeight = '150px';
-    });
+    // Select elements within the card
+    const knowMoreButton = card.querySelector('.know-more-button');
+    const popup = card.querySelector('.popup');
+    const closePopupButton = card.querySelector('.close-popup');
+    const description = card.querySelector('.description');
 
-    card.addEventListener('mouseleave', function() {
-        const description = this.querySelector('.description');
-        description.style.opacity = 0;
-        description.style.maxHeight = '0';
-    });
+    if (knowMoreButton && popup && closePopupButton) {
+        // Show the popup on "Know More" button click
+        knowMoreButton.addEventListener('click', () => {
+            if (description) {
+                description.style.opacity = 1;
+                description.style.maxHeight = '150px';
+            }
+            popup.classList.remove('hidden');
+        });
+
+        // Hide the popup on "Close" button click
+        closePopupButton.addEventListener('click', () => {
+            popup.classList.add('hidden');
+            if (description) {
+                description.style.opacity = 0;
+                description.style.maxHeight = '0';
+            }
+        });
+
+        // Hide the popup if clicking outside of it
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) {
+                popup.classList.add('hidden');
+                if (description) {
+                    description.style.opacity = 0;
+                    description.style.maxHeight = '0';
+                }
+            }
+        });
+    }
 });
-
-// Animated background (optional)
-function createStar() {
-    console.log('Creating star');
-    const star = document.createElement('div');
-    star.classList.add('star');
-    star.style.left = `${Math.random() * window.innerWidth}px`;
-    star.style.top = `${Math.random() * window.innerHeight}px`;
-    star.style.animationDuration = `${Math.random() * 5 + 3}s`; // Random duration for twinkling effect
-    star.style.opacity = Math.random();
-
-    document.body.appendChild(star);
-
-    setTimeout(() => {
-        star.remove(); // Remove stars after their animation finishes
-    }, 8000); // 8 seconds is the max animation time
-}
-
-setInterval(createStar, 500); // Create a new star every 0.5 seconds
 
