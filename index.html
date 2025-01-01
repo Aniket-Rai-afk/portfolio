@@ -67,14 +67,15 @@
     <!-- Header -->
     <header class="bg-gray-800 py-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-3xl font-bold">Aniket Rai</h1>
+            <h1 class="text-3xl font-bold">Aniket Rai </h1>
             <nav>
                 <ul class="flex space-x-4">
                     <li><a href="#about" class="hover:text-blue-400">About</a></li>
                     <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
                     <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
                     <li><a href="#internships" class="hover:text-blue-400">Internships</a></li>
-                    <li><a href="#responsibilities" class="hover:text-blue-400">Responsibilities</a></li>
+                    <li><a href="#responsibilities" class="hover:text-blue-400">Roles</a></li>
+                    <li><a href="#resume" class="hover:text-blue-400">Resume</a></li>
                     <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
                 </ul>
             </nav>
@@ -83,117 +84,254 @@
 
     <!-- About Section -->
     <section id="about" class="py-16 bg-gray-900">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-6">About Me</h2>
-            <p class="text-lg leading-relaxed text-gray-400 max-w-2xl mx-auto">
-                I am an aspiring Cybersecurity Engineer with a passion for learning about network security, ethical hacking, and protecting digital infrastructures. I am eager to develop my skills in this field and am actively pursuing certifications and knowledge to make a significant impact in the cybersecurity world. In my free time, I love stargazing and exploring the beauty of the night sky.
+        <div class="container mx-auto flex flex-col items-center text-center md:flex-row md:text-left md:items-center md:justify-center">
+            <!-- Profile Picture -->
+            <div class="mb-8 md:mb-0 md:mr-8">
+                <div class="relative w-56 h-56 rounded-full overflow-hidden border-4 border-blue-400 shadow-lg">
+                    <img 
+                        src="images/your-photo.jpg" 
+                        alt="Aniket's Photo" 
+                        class="w-full h-full object-cover">
+                </div>
+            </div>
+            <!-- About Text -->
+            <div>
+                <h2 class="text-4xl font-semibold mb-4 text-white">About Me</h2>
+                <p class="text-lg leading-relaxed text-gray-400 max-w-lg">
+                    I am an aspiring Cybersecurity Engineer with a passion for learning about network security, ethical hacking, and protecting digital infrastructures. I am eager to develop my skills in this field and am actively pursuing certifications and knowledge to make a significant impact in the cybersecurity world. In my free time, I love stargazing and exploring the beauty of the night sky.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+<!-- Skills Section -->
+<section id="skills" class="py-16 bg-gray-800">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-6">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
+                <h3 class="text-2xl font-semibold mb-4">Networking</h3>
+                <p class="text-gray-400">Understanding of network protocols and basic network security principles.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
+                <h3 class="text-2xl font-semibold mb-4">Ethical Hacking</h3>
+                <p class="text-gray-400">Knowledge of penetration testing, vulnerability analysis, and ethical hacking techniques and tools used.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
+                <h3 class="text-2xl font-semibold mb-4">Tools and Softwares</h3>
+                <p class="text-gray-400">Wireshark | Nmap | IBM QRadar | Kali Linux | Parrot OS | Metasploit | Burp Suite | Nessus.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
+                <h3 class="text-2xl font-semibold mb-4">Programming Languages</h3>
+                <p class="text-gray-400">Java (most proficient) | Python | C | C++ | SQL.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
+                <h3 class="text-2xl font-semibold mb-4">Security Tools</h3>
+                <p class="text-gray-400">Familiar with security tools like Wireshark, Nmap, Nessus, and Metasploit.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Internships Section -->
+<section id="internships" class="py-16 bg-gray-800">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-6">Internships</h2>
+        <p class="text-lg text-gray-400 mb-10"></p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
+                <h3 class="text-2xl font-semibold mb-4 transition duration-300">Junior Cybersecurity Analyst Intern at YHills</h3>
+                <p class="description text-gray-400 mt-4">Assisted in threat detection, incident response, and security analysis to improve organizational security. Gained hands-on 
+                experience in cybersecurity, analyzing logs and identifying potential threats.</p>
+                <!-- Google Drive Link Button -->
+                <a href="https://drive.google.com/file/d/1YlKWocHCS5UGoTBf-Rf7vGw6VwCtBOv8/view" 
+                   class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors mt-4" target="_blank">
+                   View Documents
+                </a>
+            </div>
+
+            <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
+                <h3 class="text-2xl font-semibold mb-4 transition duration-300">Networking analyst Vocational Intern at SECL</h3>
+                <p class="description text-gray-400 mt-4">Optimized network configuration through hands-on adjustments and testing of protocols, resulting in improved data transfer 
+                    speeds; directly managed 50+ network devices, increasing overall efficiency for over 300 users.</p>
+                <!-- Google Drive Link Button -->
+                <a href="https://drive.google.com/file/d/14xIaLo17SE1jeHnGBEZYak83oE_Ug0M4/view" 
+                   class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors mt-4" target="_blank">
+                   View Documents
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-16 bg-gray-900 text-center">
+    <h2 class="text-4xl font-semibold text-white mb-4">Projects</h2>
+    <p class="text-gray-400 mb-8">Details about my projects:</p>
+    <div class="container mx-auto">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-bold text-white mb-4">Malware Detection and Classification</h3>
+            <a 
+                href="https://github.com/Aniket-Rai-afk/Malware-Detection-and-Classification" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="inline-block bg-blue-600 text-white font-medium py-2 px-4 rounded-md hover:bg-blue-700 transition-colors">
+                Know More
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+ <!-- Responsibilities Section -->
+<section id="responsibilities" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-6">Position of Responsibilities</h2>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md max-w-3xl mx-auto mb-6">
+            <h3 class="text-2xl font-semibold mb-4">Chairperson at VIT-Stellar</h3>
+            <p class="text-gray-400">
+                Led the VIT Stellar technical club with 1000+ members, driving innovation, skill development, and community engagement. Coordinated events, projects, and collaborations to promote technical excellence and innovation which helped me to gain some skills such as Leadership Communication, Team Management, Problem-Solving, Event Planning.
             </p>
         </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-800">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-6">Skills</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4">Networking</h3>
-                    <p class="text-gray-400">Understanding of network protocols and basic network security principles.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4">Ethical Hacking</h3>
-                    <p class="text-gray-400">Knowledge of penetration testing, vulnerability analysis, and ethical hacking techniques.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4">Security Tools</h3>
-                    <p class="text-gray-400">Familiar with security tools like Wireshark, Nmap, and Metasploit.</p>
-                </div>
-            </div>
+        <!-- Coordinator | Riviera MAR 2024 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md max-w-3xl mx-auto mb-6">
+            <h3 class="text-2xl font-semibold mb-4">Coordinator in Riviera 2024</h3>
+            <p class="text-gray-400">
+                As a dedicated student coordinator in the Halls Arrangement Department of the Riviera Event Organizing Committee, I organized Riviera 2024, a 4-day fest with 50,000+ attendees and 500+ volunteers. My responsibilities included managing logistics, overseeing volunteers, and ensuring a smooth experience for all attendees.
+            </p>
         </div>
-    </section>
 
-    <!-- Internships Section -->
-    <section id="internships" class="py-16 bg-gray-800">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-6">Internships</h2>
-            <p class="text-lg text-gray-400 mb-10">Hover over the titles to see more details about my internship experiences:</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4 transition duration-300">Cybersecurity Intern at XYZ Corp</h3>
-                    <p class="description text-gray-400 mt-4">Worked on network security audits, vulnerability assessments, and participated in a team addressing cyber threats.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4 transition duration-300">Network Security Intern at ABC Ltd</h3>
-                    <p class="description text-gray-400 mt-4">Assisted in monitoring network traffic for anomalies and implementing basic firewall rules to enhance security.</p>
-                </div>
-            </div>
+        <!-- Volunteer | Riviera FEB 2023 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md max-w-3xl mx-auto mb-6">
+            <h3 class="text-2xl font-semibold mb-4">Volunteer in Riviera 2023</h3>
+            <p class="text-gray-400">
+                I provided logistics and operations support during Riviera 2023, a 4-day fest, to ensure a seamless experience. I assisted with event coordination, volunteer management, and contributed to the overall success of the event.
+            </p>
         </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-16 bg-gray-900">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-6">Projects</h2>
-            <p class="text-lg text-gray-400 mb-10">Hover over the titles to see more details about my projects:</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-800 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4">Malware Detection and Classification</h3>
-                    <p class="description text-gray-400 mt-4">
-                        Developed a system to detect and classify malware using machine learning. Enhanced detection accuracy and reduced false positives by 25%.
-                    </p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4">Basic Firewall Setup</h3>
-                    <p class="description text-gray-400 mt-4">Configured a basic firewall for a home network to ensure secure connections.</p>
-                </div>
-            </div>
+        <!-- Volunteer | Space Week OCT 2022 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+            <h3 class="text-2xl font-semibold mb-4">Volunteer in Space Week 2022</h3>
+            <p class="text-gray-400">
+                Assisted with event logistics, guided exhibits, conducted interactive sessions, and provided information to attendees, making the event a success and inspiring the next generation of space enthusiasts. My efforts helped in promoting space science and sparking curiosity in the attendees.
+            </p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Responsibilities Section -->
-    <section id="responsibilities" class="py-16 bg-gray-800">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-6">Responsibilities</h2>
-            <p class="text-lg text-gray-400 mb-10">Hover over the titles to see more details about my responsibilities:</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4">Cybersecurity Intern at XYZ Corp</h3>
-                    <p class="description text-gray-400 mt-4">Performed vulnerability assessments, monitored security systems, and implemented incident response protocols.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md card">
-                    <h3 class="text-2xl font-semibold mb-4">Network Security Intern at ABC Ltd</h3>
-                    <p class="description text-gray-400 mt-4">Monitored firewall logs, applied security patches, and ensured compliance with security policies.</p>
-                </div>
-            </div>
+
+<!-- Certifications and Licenses Section -->
+<section id="certifications" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-6">Certifications and Licenses</h2>
+
+        <!-- Certified Ethical Hacker Certification -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md max-w-3xl mx-auto mb-6">
+            <h3 class="text-2xl font-semibold mb-4">Certified Ethical Hacker (CEH)</h3>
+            <p class="text-gray-400 mb-4">
+                I have obtained the Certified Ethical Hacker certification, which demonstrates my expertise in ethical hacking and cybersecurity.
+            </p>
+            <a href="https://drive.google.com/file/d/1kRfLSm_XM3dJoSM_4RJ6lKgfCksQ-Xqd/view?usp=sharing" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" target="_blank">
+                View License
+            </a>
+            <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/" class="bg-gray-700 text-white px-4 py-2 rounded ml-4 hover:bg-gray-800" target="_blank">
+                Know More
+            </a>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-800">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-semibold mb-6">Contact Me</h2>
-            <p class="text-lg text-gray-400 mb-8">Feel free to reach out to me for networking or collaboration opportunities.</p>
-            <form class="max-w-lg mx-auto">
-                <input type="text" placeholder="Your Name" class="w-full p-4 mb-4 bg-gray-900 text-white rounded-lg">
-                <input type="email" placeholder="Your Email" class="w-full p-4 mb-4 bg-gray-900 text-white rounded-lg">
-                <textarea placeholder="Your Message" class="w-full p-4 mb-4 bg-gray-900 text-white rounded-lg"></textarea>
-                <button type="submit" class="w-full bg-blue-500 p-4 rounded-lg hover:bg-blue-400">Send Message</button>
-            </form>
+        <!-- Microsoft Power BI Desktop for Business Intelligence Certification -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md max-w-3xl mx-auto">
+            <h3 class="text-2xl font-semibold mb-4">Microsoft Power BI Desktop for Business Intelligence</h3>
+            <p class="text-gray-400 mb-4">
+                This certification showcases my proficiency in leveraging Microsoft Power BI for creating insightful business intelligence solutions ,Exploring data, building insights, and creating impactful visualizations, and this certification takes it a step further.
+            </p>
+            <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-811fe6fb-d31e-44ee-be77-35cae2e34c54.pdf" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600" target="_blank">
+                View License
+            </a>
+            <a href="https://learn.microsoft.com/en-us/power-bi/" class="bg-gray-700 text-white px-4 py-2 rounded ml-4 hover:bg-gray-800" target="_blank">
+                Know More
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 py-4 text-center">
-        <p class="text-gray-400">© 2024 Aniket Rai. All rights reserved.</p>
-    </footer>
+<!-- Resume Section -->
+<section id="resume" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-6">Resume</h2>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md max-w-3xl mx-auto mb-6">
+            <h3 class="text-2xl font-semibold mb-4">View My Resume</h3>
+            <p class="text-gray-400 mb-4">
+                You can view and download my resume by clicking on the link below. It contains all the details about my educational background, work experience, certifications, and skills.
+            </p>
+            <a href="https://drive.google.com/file/d/1k_zgNPAhg5QWuQnKTTihhfoQnHutKR89/view?usp=sharing" 
+                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                target="_blank">
+                View Resume
+            </a>
+        </div>
+    </div>
+</section>
 
-    <script>
-        const form = document.querySelector('form');
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Thank you for reaching out! I will get back to you soon.');
-        });
-    </script>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-900">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-semibold mb-6 text-white">Contact</h2>
+        <p class="text-lg text-gray-400 mb-10">Feel free to reach out to me via LinkedIn, Instagram, or email.</p>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center space-x-6">
+            <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/aniket-rai-694b5b244/" target="_blank">
+                <img src="images/linkedin-icon.png" alt="LinkedIn" class="w-10 h-10 rounded-full border border-gray-600 hover:opacity-80 transition-all">
+            </a>
+
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/aniket_rai23/" target="_blank">
+                <img src="images/instagram-icon.png" alt="Instagram" class="w-10 h-10 rounded-full border border-gray-600 hover:opacity-80 transition-all">
+            </a>
+
+            <!-- Gmail Icon -->
+            <a href="mailto:aniiket2004@gmail.com">
+                <img src="images/email-icon.png" alt="Gmail" class="w-10 h-10 rounded-full border border-gray-600 hover:opacity-80 transition-all">
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-4 text-center">
+    <p class="text-gray-400">© 2024 Aniket Rai. All rights reserved.</p>
+</footer>
+
+<script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for reaching out! I will get back to you soon.');
+    });
+</script>
 </body>
 </html>
 
+
+<!-- Notes for Updating Links -->
+<!-- To update the "View License" links, replace the "href" value in the corresponding <a> tag with the new Google Drive link. -->
+<!-- To update the "Know More" links, replace the "href" value in the corresponding <a> tag with the updated official certification webpage link. -->
+
+
+ 
